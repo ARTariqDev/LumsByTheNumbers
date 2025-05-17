@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <title>LUMS By The Numbers</title>
+  </head>
+
+  <body class="bg-neutral-100 text-gray-800 font-sans">
+
+   
+
+    <!-- Navbar -->
+    <nav class="bg-white text-white shadow-md sticky top-0 z-50">
+         <!-- Header -->
+        <header class="bg-white shadow-md ticky top-0 z-50">
+            <div class="container mx-auto px-4 py-6">
+            <h1 class="text-4xl font-bold text-center text-yellow-600">
+                LUMS By The Numbers
+            </h1>
+            </div>
+        </header>
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <ul class="flex space-x-6 text-md font-bold font-medium mx-auto">
+            <li><a href="#about" class="hover:text-yellow-500">What is this?</a></li>
+            <li><a href="#stats" class="hover:text-yellow-500">At A Glance</a></li>
+            <li><a href="#graphs" class="hover:text-yellow-500">Graphs</a></li>
+            <li><a href="#contribute" class="hover:text-yellow-600">Contribute</a></li>
+        </ul>
+        </div>
+    </nav>
+    
+
+    
+
+    <!-- About -->
+    <section id="about" class="bg-yellow-100 border-t-4 border-yellow-400">
+      <div class="container mx-auto px-4 py-6">
+        <h2 class="text-lg text-yellow-800 leading-relaxed">
+          <span class="block font-semibold text-xl mb-2">What is this?</span>
+          LUMS By The Numbers is a website that compiles verified admissions
+            data for the Lahore University of Management Sciences (LUMS), one of
+            Pakistan’s most prestigious universities. By gathering information
+            from Reddit threads, WhatsApp groups, and other student communities,
+            the site aims to provide a more transparent view of the admissions
+            process. It showcases real SAT scores and O level grades shared by
+            accepted students, helping applicants gauge where they stand.
+            <br /><br />
+            Whether you're applying soon or just exploring your options, this
+            resource offers valuable insights to make your application more
+            informed and your expectations more realistic.
+            <br /><br />
+            <strong class="block mt-4"
+              >NOTE: O level "points" are calculated based on A's and A*'s. A
+              grades = 7 points, A* = 10 points.</strong
+            >
+        </h2>
+      </div>
+    </section>
+
+    <!-- Stats Table -->
+    <main id="stats" class="py-10">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-yellow-700 mb-4">At A Glance</h2>
+        <div class="overflow-x-auto rounded-lg shadow-md bg-white">
+          <table class="min-w-full border border-yellow-600 text-sm">
+            <thead>
+              <tr class="bg-yellow-600 text-white">
+                <th class="px-4 py-3 text-left font-medium">Metric</th>
+                <th class="px-4 py-3 text-left font-medium">SAT</th>
+                <th class="px-4 py-3 text-left font-medium">O Levels</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-yellow-300">
+              <tr><td class="px-4 py-2">Count</td><td class="px-4 py-2">46</td><td class="px-4 py-2">46</td></tr>
+              <tr><td class="px-4 py-2">Mean</td><td class="px-4 py-2">1407.83</td><td class="px-4 py-2">75.80</td></tr>
+              <tr><td class="px-4 py-2">Std Dev</td><td class="px-4 py-2">86.66</td><td class="px-4 py-2">18.31</td></tr>
+              <tr><td class="px-4 py-2">Min</td><td class="px-4 py-2">1200</td><td class="px-4 py-2">48</td></tr>
+              <tr><td class="px-4 py-2">25%</td><td class="px-4 py-2">1352.5</td><td class="px-4 py-2">62.25</td></tr>
+              <tr><td class="px-4 py-2">Median (50%)</td><td class="px-4 py-2">1410</td><td class="px-4 py-2">72.5</td></tr>
+              <tr><td class="px-4 py-2">75%</td><td class="px-4 py-2">1470</td><td class="px-4 py-2">86.25</td></tr>
+              <tr><td class="px-4 py-2">Max</td><td class="px-4 py-2">1580</td><td class="px-4 py-2">134</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- Graphs Section -->
+    <section id="graphs" class="py-10 bg-neutral-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-yellow-700 mb-4">Graphs and Visual Insights</h2>
+        <div id="gallery" class="relative w-full" data-carousel="static">
+          <div class="relative h-96 overflow-hidden rounded-lg md:h-[32rem]">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="assets/graph1.png" class="block w-full h-full object-contain mx-auto" alt="Graph 1">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="assets/graph2.png" class="block w-full h-full object-contain mx-auto" alt="Graph 2">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="assets/graph3.png" class="block w-full h-full object-contain mx-auto" alt="Graph 3">
+            </div>
+          </div>
+          <!-- Slider controls -->
+          <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50">
+              <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/></svg>
+            </span>
+          </button>
+          <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50">
+              <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contribute Section -->
+    <section id="contribute" class="py-10 bg-white border-t border-yellow-300">
+        <div class="w-full px-4">
+        <h2 class="text-2xl font-bold text-yellow-700 mb-4">Contribute Data</h2>
+        <form action="mailto:artariqdev@gmail.com" method="POST" enctype="text/plain" class="space-y-6 w-full bg-yellow-50 p-6 rounded-lg shadow-md ">
+            <div>
+            <label class="block mb-2 text-sm font-medium text-yellow-800" for="o-level">O Level Points</label>
+            <input type="number" name="O_Level_Points" id="o-level" class="w-full p-2 border border-yellow-300 rounded-md" required />
+            </div>
+            <div>
+            <label class="block mb-2 text-sm font-medium text-yellow-800" for="sat">SAT Score</label>
+            <input type="number" name="SAT_Score" id="sat" class="w-full p-2 border border-yellow-300 rounded-md" required />
+            </div>
+            <div>
+            <label class="block mb-2 text-sm font-medium text-yellow-800" for="schools">Admitted School(s)</label>
+            <textarea name="Admitted_Schools" id="schools" rows="3" class="w-full p-2 border border-yellow-300 rounded-md" required></textarea>
+            </div>
+            <button type="submit" class="bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-md ">
+            Submit
+            </button>
+        </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-yellow-600 text-white text-center py-4 mt-10">
+      &copy; LUMS By The Numbers 2025
+    </footer>
+
+  </body>
+</html>
